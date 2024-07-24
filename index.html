@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple List App</title>
+    <style>
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 200px;
+        margin-left: 450px;
+        border: 10px solid grey;
+        width: 500px;
+        font-size: 30px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        box-shadow: 10px 10px grey;
+      }
+
+      .button {
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+        background: grey;
+      }
+
+      #input-text {
+        height: 30px;
+        border-radius: 5px;
+        background: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Simple List App</h1>
+
+      <!-- Text box and button -->
+      <div>
+        <input type="text" id="input-text" placeholder="Enter item" />
+        <button class="button" id="add-button">Add</button>
+      </div>
+
+      <h2 id=" added-list">Added List:</h2>
+      <ul id="list-container"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
